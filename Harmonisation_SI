@@ -1,0 +1,56 @@
+Devoir – Use Case 1
+Clinique privée : Mise en place d’un Dossier Patient Unique
+1-	Identification du système d’information existant
+ Acteurs impliqués :
+•	Médecins : Pour faire la consultation, diagnostic, prescription.
+•	Infirmiers : Pour faire les soins, suivi, transmission d’informations.
+•	Caissiers : Pour faire la facturation, encaissement.
+•	Administration : Pour faire l’admission, la gestion des dossiers.
+•	Patients : bénéficiaires des soins
+Données utilisées :
+•	Identité du patient (nom, date de naissance, numéro de dossier)
+•	Informations médicales (diagnostics, prescriptions, antécédents)
+•	Données de soins (actes réalisés, suivi infirmier)
+•	Informations financières (paiements, factures, remboursements)
+  Outils existants :
+•	Logiciel d’admission.
+•	Logiciel de consultation médicale.
+•	Fichier Excel pour la facturation.
+•	Dossiers papier pour l’historique médical.
+Processus actuels :
+•	Admission : Saisi manuelle dans le logiciel d’accueil.
+•	Consultation : saisie dans un logiciel distinct sans lien avec l’admission.
+•	Facturation : traitement manuel via Excel.
+•	Historique : recherche dans les archives papier.
+2-	Problème liés à la non-harmonisation
+•	La duplication ou incohérence des données patients.
+•	La perte ou oubli d’informations médicales importantes.
+•	Le retard dans la prise en charge (temps de recherche, coordination)
+•	L’erreurs de facturation dues à des données non synchronisées
+•	La difficulté à produire des rapports fiables pour la direction
+3-	Types de Système d’Information concernés
+Système	                          Type SI
+Logiciel d’admission	            SI opérationnel
+Logiciel de consultation	        SI opérationnel
+Fichier Excel de facturation	    SI opérationnel
+Dossier papier	                  Aucun 
+Rapports manuels	                SI décisionnel
+
+4-	Proposition de solution d’harmonisation
+Principe du Dossier Patient Unique :
+•	La centralisation de toutes les données patientes dans un seul système
+•	L’accès sécurisé et partagé entre les services autorisés.
+Accès aux informations :
+•	L’interface unique pour les médecins, infirmiers, caissiers, administration
+•	La mise à jour en temps réel des données
+Règles de base :
+•	Le droits d’accès selon le rôle
+•	La traçabilité des modifications
+•	La sauvegarde et archivage automatique
+5-	Bénéfices attendus
+•	L’amélioration de la qualité des soins grâce à une meilleure coordination
+•	La réduction des erreurs médicales et administratives
+•	Le gain de temps pour les équipes et les patients
+•	La facturation plus précise et rapide
+•	La eilleure prise de décision grâce à des données consolidées.
+
