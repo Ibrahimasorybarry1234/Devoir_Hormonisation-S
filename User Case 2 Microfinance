@@ -1,0 +1,40 @@
+Microfinance: Identifiant Client Unique & API d’Interopérabilité.
+Travail demandé
+1. Décrire la situation actuelle (état existant)
+Quatre systèmes indépendants : -ouverture de compte, -gestion du crédit, -recouvrement et -reporting sont utilisés par l'institution. Chaque système attribue son propre identifiant client, sans aucun mécanisme de synchronisation ou de communication entre eux. En conséquence, les informations des clients sont fragmentées et maintenues isolément dans chaque système. Les systèmes sont opérationnels (comptes, crédits, recouvrement) et décisionnels (reporting).
+2. Identifier les problèmes liés à l’absence d’identifiant unique
+- Multiples identifiants pour le même client. 
+- Doublons dans les bases de données. 
+- Incohérences entre les informations des clients. 
+- Suivi de crédit difficile et peu fiable. 
+- Rapports erronés ou incomplets. 
+- Risques réglementaires accrus. 
+- Mauvaise expérience client.
+3. Identifier les Master Data concernées
+Master Data concernées
+
+4. Quel est le terme SSOT (Single Source of Truth)
+L'identité du client sera développée et maintenue dans un référentiel unifié (Référentiel Maître Client), accessible via une API. Ce référentiel devient la source officielle pour toutes les données client. Seul le système d'ouverture de compte (ou un module dédié) aura le droit de créer ou de modifier un client, selon des règles de gouvernance claires. Les autres systèmes consommeront les données via l'API sans les modifier.
+
+5. Solution d'harmonisation
+Étapes logiques :
+Création d'un identifiant client unique dans le référentiel central.
+Mise en œuvre d'une API centrale pour exposer les données clients.
+Connexion des systèmes existants à l'API en tant que consommateurs.
+Définition des règles de gestion : qui peut créer, modifier, consulter.
+Schéma logique :
+[Système d’ouverture de comptes] → [API centrale] ←[Crédits / Recouvrement / Reporting]
+
+6. Rôle l’API d’interopérabilité:
+Chaque système reçoit les mêmes données client en temps réel, sans copier-coller, etc. Cela le rend stable sur les systèmes, élimine les duplications et permet une intégration potentielle future avec d'autres outils ou avec des partenaires externes. 
+
+7. Bénéfices de la solution
+- Données fiables et cohérentes. 
+- Réduction des erreurs et des doublons. 
+- Meilleure prise de décision. 
+- Rapports consolidés et précis. 
+- Conformité réglementaire améliorée. 
+- Expérience client améliorée. 
+- Facilité d'intégration avec les partenaires. 
+- Réduction des coûts de maintenance. 
+- Gouvernance des données contrôlée
